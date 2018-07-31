@@ -1,0 +1,39 @@
+{
+  "appType": "wkyun",
+  "httpConnectTimeout": 60,
+  "httpRWTimeout": 120,
+  "httpsCaCertPath": "/Users/zhanghongchao01/work/go/Pikachu/cert/ca.crt",
+  "logTimestampUrl": "https://127.0.0.1:9090/xpanec/timestamp",
+  "logFailureRateUrl": "https://127.0.0.1:9090/xpanec/log-failure-rate",
+  "delLog": {
+    "p2pRunningLog": {
+      "logDir": "/Users/zhanghongchao01/Downloads/RunningLog",
+      "logExpiredTime": 777600,
+      "interval": 1800
+    },
+    "p2pCrashLog": {
+      "logDir": "/Users/zhanghongchao01/Downloads/CrashLog",
+      "logExpiredTime": 777600,
+      "interval": 1800
+    }
+  },
+  "uploadLog": {
+    "p2pRunningLog1": {
+      "logDir": "/Users/zhanghongchao01/Downloads/RunningLog",
+      "logServerUrl": "https://127.0.0.1:9090/xpanec/log-upload",
+      "checkType": "file-notify"
+    },
+    "p2pRunningLog2": {
+      "logDir": "/Users/zhanghongchao01/Downloads/RunningLog",
+      "logServerUrl": "https://127.0.0.1:9090/xpanec/log-upload",
+      "checkType": "round-robin",
+      "interval": 600
+    },
+    "p2pCrashLog": {
+      "logDir": "/Users/zhanghongchao01/Downloads/CrashLog",
+      "logServerUrl": "https://127.0.0.1:9090/xpanec/log-crash",
+      "checkType": "round-robin",
+      "interval": 300
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "httpSrvAddr": "127.0.0.1:9090",
+  "httpReadTimeout": 600,
+  "httpWriteTimeout": 900,
+  "httpsCertFile": "/Users/zhanghongchao01/work/go/Pikachu/cert/server.crt",
+  "httpsKeyFile": "/Users/zhanghongchao01/work/go/Pikachu/cert/server.key",
+  "saveLog": {
+    "p2pRunningLog": {
+      "method": "/xpanec/log-upload",
+      "logpath": "/Users/zhanghongchao01/work/go/Pikachu/tmp/crashlog"
+    },
+    "p2pCrashLog": {
+      "method": "/xpanec/log-crash",
+      "logpath": "/Users/zhanghongchao01/work/go/Pikachu/tmp/runninglog"
+    }
+  },
+  "delLog": {
+    "NormalLog": {
+      "logDir": "/Users/zhanghongchao01/work/go/Pikachu/tmp",
+      "logExpiredTime": 777600,
+      "interval": 1800
+    }
+  }
+}
